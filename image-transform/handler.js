@@ -5,8 +5,8 @@ const sharp = require("sharp");
 // get references;
 const srcBucket = process.env.SOURCE_BUCKET;
 const S3_ENDPOINT_URL = process.env.S3_ENDPOINT_URL;
-const ID = process.env.ACCESS_KEY_ID;
-const SECRET = process.env.ACCESS_KEY;
+const ID = process.env.SECRET_KEY_ID;
+const SECRET = process.env.SECRET_KEY;
 const dstBucket = process.env.DESTINATION_BUCKET;
 let width = parseInt(process.env.RESIZED_WIDTH, 10);
 if (width < 1 || width > 1000) {

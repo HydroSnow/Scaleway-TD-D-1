@@ -6,8 +6,8 @@ const { isNull } = require("util");
 
 const SOURCE_BUCKET = process.env.SOURCE_BUCKET;
 const S3_ENDPOINT_URL = process.env.S3_ENDPOINT_URL;
-const ID = process.env.ACCESS_KEY_ID;
-const SECRET = process.env.ACCESS_KEY;
+const ID = process.env.SECRET_KEY_ID;
+const SECRET = process.env.SECRET_KEY;
 const TRANSFORM_URL = process.env.TRANSFORM_URL;
 
 // Create S3 service object
